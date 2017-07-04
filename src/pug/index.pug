@@ -1,0 +1,35 @@
+doctype html
+html(lang="ru")
+
+    include components/head
+    include components/header
+    include components/slide-mobile-nav
+    include components/footer
+    include components/mixins
+    include components/svg-icons
+    include components/trapezenav
+    include components/sidebar-left
+    include components/main-content
+    include components/sidebar-right
+    head
+        +head
+    body.body
+        .page-wrapper
+            +trapezenav
+            .page-wrapper__content
+                +svg-icons
+                +slide-mobile-nav
+                .content__container
+                    +header
+                    main.main
+                        +sidebar-left
+                        +main-content
+                        +sidebar-right
+            button.btn-round
+                span.btn-round__question ?
+                | Help
+        script(src='//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js')
+        script(src='bower_components/highcharts/highcharts.js')
+        script(src='js/svgxuse.js')
+        script(src='js/main.js')
+        script(src='js/chart.js')

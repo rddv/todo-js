@@ -1,0 +1,78 @@
+//padding
+$current-padding-top: 8px;
+$current-padding-bottom: 7px;
+
+
+
+//text
+$font-main: "Roboto", sans-serif;
+$title-size: 20px;
+$title-size-medium: 24px;
+$title-size-large: 30px;
+
+$font-size: 15px;
+$font-size-small: 13px;
+$line-height: 1.154;
+
+$font-weight-thin: 300;
+$font-weight-normal: 400;
+$font-weight-strong: 500;
+//colors
+
+$color-main: #505050;
+$color-accent: #7E98E5;
+$color-accent-dark: #647EC9;
+$color-mobile-nav: #696b7e;
+$color-mobile-nav-border: #5A5C67;
+$color-orange-close: #f66e00;
+$color-gray-table-head-border: #E5E9EE;
+
+$color-main-light: #828699;
+$color-main-dark: #3C516B;
+$color-text-gray: #B6B6B6;
+
+
+
+$color-button: $color-accent;
+$color-warning: #E64545;
+$color-success: #53A642;
+$color-white: #fff;
+
+
+
+
+//buttons
+$border-radius: 3px;
+
+$button-radius: 3px;
+$button-shadow: 0 3px 5px 1px rgba(0,0,0,0.1);
+$button-bg: #96ADF3;
+$button-bg-hover: #96ADF3;
+$button-bg-active: $color-accent-dark;
+$button-border-hover: 1px solid #6F94FF;
+
+$button-border-light: 1px solid #F0F2F5;
+$button-border-light-hover: 1px solid #7E98E5;
+$button-bg-light-active: #ECF0FF;
+
+$button-round-bg: $color-main-light;
+$button-round-bg-hover: #83869A;
+$button-round-bg-active: #5C6076;
+$button-round-border: 1px solid $color-main-light;
+$button-round-border-hover : 1px solid #5C6076;
+
+//navigation
+
+$nav-border: 1px solid #F0F2F5;
+$nav-bg-active: #EBEEF2;
+$cells-border: 1px solid #F0F2F5;
+$cells-tr-border: 1px solid #EBEEF2;
+
+//cells
+$block-title: #EBEEF2;
+
+
+$autotransfer-gray: #F6F7F7;
+$color-table-warning: #FFFAF7;
+$color-arrow-warning: #FF6F08;
+
