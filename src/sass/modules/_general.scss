@@ -26,19 +26,7 @@ a {
   text-decoration: none;
   color: $color-main;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6{
-  font-weight: normal;
-}
-.link{
-  font-size: $font-size-small;
-  color: $color-accent;
-  text-decoration: underline;
-}
+
 .flex{
   display: flex;
   justify-content: space-between;
@@ -47,99 +35,5 @@ h6{
 .container{
   max-width: 980px;
   margin: auto;
+  padding: 0 15px;
 }
-.bg--accent{
-  background-color: $color-accent;
-}
-
-.content__container{
-  margin: 0 auto;
-  width: 100%;
-  max-width: 980px;
-  @include w1024{
-    max-width: 760px;
-  }
-}
-
-.page-wrapper{
-  overflow: hidden;
-}
-
-.page-wrapper__content{
-  position: relative;
-  left: 0;
-  transition: left .2s ease;
-  &.active{
-    left: 240px;
-    transition: left .4s ease;
-  }
-}
-
-//video
-.video{
-  &__img{
-    width: 100%;
-  }
-}
-
-//copyright
-.copyright{
-  position: relative;
-  max-width: 140px;
-  font-size: $font-size-small;
-  color: $color-text-gray;
-  font-weight: 300;
-}
-
-
-//partner-list
-.partner-list_item{
-  display: inline-block;
-  margin-right: 6px;
-  width: 62px;
-  height: 38px;
-  background: url("/img/mcafee_visa_master.png") no-repeat;
-  background-size: 190px 28px;
-  &:last-of-type{
-    margin-right: 0;
-  }
-  &.acafee{
-    background-position: 0 5px;
-  }
-  &.visa-verified{
-    background-position: -63px 5px;
-  }
-  &.mastercard-secure{
-    background-position: -125px 5px;
-  }
-}
-
-
-.main-content{
-  //background: rgba(0, 128, 0, 0.23);
-}
-
-
-//form styles
-.field{
-  border: 1px solid #F0F2F5;
-  border-radius: 3px;
-  background-color: #FFFFFF;
-  box-shadow: 0 2px 4px 1px rgba(0,0,0,0.02);
-}
-
-.field-input{
-  height: 30px;
-  width: 100%;
-  max-width: 200px;
-}
-
-.field-checkbox{
-  height: 18px;
-  width: 18px;
-}
-
-.warning-row{
-  background-color: $color-table-warning;
-}
-

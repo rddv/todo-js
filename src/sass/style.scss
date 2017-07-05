@@ -5,4 +5,95 @@
 @import "modules/variables";
 @import "modules/general";
 
+.container{
+    margin-top: 50px;
+}
+.title{
+    display: flex;
+    margin: 0;
+    padding: 20px;
+    background-color: tomato;
+    justify-content: center;
+    font-size: 56px;
+}
+.items{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #000;
+    border-top: none;
+    border-bottom: none;
+}
+.item{
+    display: flex;
+    width: 100%;
+    height: 71px;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #000;
+    &.active{
+        opacity: 0.3;
+        .item__title{
+            text-decoration: line-through;
+        }
+        .item__buttons{
+            display: none;
+        }
+    }
+    &__title{
+        margin-left: 10px;
+    }
+    &__input{
+        margin-left: 7px;
+        padding: 0 7px 0 0;
+        display: none;
+    }
+    &__info{
+        display: flex;
+        align-items: center;
+        &.show{
+            .item__title{
+                display: none;
+            }
+            .item__input{
+                display: inline-block;
+            }
+        }
+    }
+    &__button{
+        opacity: 0;
+    }
+    &:hover{
+        .button{
+            opacity: 1;
+        }
+    }
+}
+.add-item{
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-between;
+    border: 1px solid #000;
+    border-top: none;
+    &__input{
+        width: 100%;
+        padding: 0 7px;
+    }
+    &__add{
+    }
+}
+.button{
+    width: 100px;
+    margin-left: 20px;
+    padding: 15px;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 1px solid #c0c0c0;
+    @include tr;
+    &:hover{
+        background-color: #eee;
+    }
 
+}

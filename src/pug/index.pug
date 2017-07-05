@@ -1,35 +1,31 @@
 doctype html
-html(lang="ru")
+html(lang="en")
 
     include components/head
-    include components/header
-    include components/slide-mobile-nav
-    include components/footer
-    include components/mixins
-    include components/svg-icons
-    include components/trapezenav
-    include components/sidebar-left
-    include components/main-content
-    include components/sidebar-right
     head
         +head
     body.body
-        .page-wrapper
-            +trapezenav
-            .page-wrapper__content
-                +svg-icons
-                +slide-mobile-nav
-                .content__container
-                    +header
-                    main.main
-                        +sidebar-left
-                        +main-content
-                        +sidebar-right
-            button.btn-round
-                span.btn-round__question ?
-                | Help
-        script(src='//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js')
-        script(src='bower_components/highcharts/highcharts.js')
-        script(src='js/svgxuse.js')
+        .container
+            h1.title application
+            ul.items
+                li.item.active
+                    span.item__info
+                        input.item__check(type="checkbox" checked)
+                        label.item__title some task #1
+                        input.item__input(type="text")
+                    span.item__buttons
+                        button.item__button.item__edit.button edit
+                        button.item__button.item__del.button delete
+                li.item
+                    span.item__info
+                        input.item__check(type="checkbox")
+                        label.item__title some task #2
+                        input.item__input(type="text")
+                    span.item__buttons
+                        button.item__button.item__edit.button edit
+                        button.item__button.item__del.button delete
+            form.add-item
+                input.add-item__input(type="text" placeholder='add a new task')
+                button.add-item__add.button add
+
         script(src='js/main.js')
-        script(src='js/chart.js')
